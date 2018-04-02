@@ -20,15 +20,15 @@ public void testGetTripName() {
 	assertEquals(testTrip.getName(),"Cracow");
 }
 
+@Test(expected=Exception.class)
+public void testEmptyDescryption() throws Exception {
+	testTrip.getDescription();
+}
+
 @Test
 public void testGetDescription() throws Exception {
 	testTrip.setDescription("Beautiful place to visit");
 	assertEquals(testTrip.getDescription(),"Beautiful place to visit");
-}
-
-@Test(expected=Exception.class)
-public void testEmptyDescryption() throws Exception {
-	testTrip.getDescription();
 }
 
 
