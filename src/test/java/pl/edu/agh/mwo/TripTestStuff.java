@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TripTest {
+public class TripTestStuff {
 	
 Trip testTrip;
 	
