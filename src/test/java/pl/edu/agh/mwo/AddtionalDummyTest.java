@@ -1,5 +1,7 @@
 package pl.edu.agh.mwo;
 
+import java.io.FileNotFoundException;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +13,7 @@ public class AddtionalDummyTest {
 		testTrip = new Trip();
 	}
 	
-	@Test(expected=Exception.class)
+	@Test(expected=NullPointerException.class)
 	public void testEmptyDescryption() throws Exception {
 		testTrip.getDescription();
 	}
