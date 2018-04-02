@@ -15,7 +15,6 @@ public class AddtionalDummyTest {
 	
 	@Test(expected=NullPointerException.class)
 	public void testEmptyDescryption() throws Exception {
-		testTrip.setDescription(null);
 		testTrip.getDescription();
 	}
 	
