@@ -1,12 +1,18 @@
 package pl.edu.agh.mwo;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TripManagerTest {
 	
-	@Test
+	@Before
 	public void testAddTrip(){
-		Trip trip = new Trip();
+		Trip testTrip = new Trip();
+	}
+	
+	@Test
+	public void addTripTest(Trip trip) {
+		trip.addTrip(testTrip);
 	}
 	
 	
