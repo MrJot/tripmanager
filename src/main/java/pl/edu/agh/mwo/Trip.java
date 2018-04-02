@@ -39,9 +39,6 @@ public class Trip {
 		photos.add(photo);
 	}
 
-	public void addTrip(Trip trip) {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 }

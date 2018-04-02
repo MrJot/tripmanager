@@ -31,7 +31,7 @@ public void testgetPhotos() {
 	Photo samplePhoto =  new Photo();
 	testTrip.addPhoto(samplePhoto);
 	assertEquals(testTrip.getPhotos().size(), 1);
-	
+	assertEquals(testTrip.getPhotos().contains(samplePhoto), true);
 }
 	
 
