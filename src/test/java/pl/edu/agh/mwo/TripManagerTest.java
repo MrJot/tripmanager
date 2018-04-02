@@ -50,6 +50,16 @@ public class TripManagerTest {
 		assertEquals(tripManager.findTrip("trip"), tripToCracow);
 	}
 	
+	@Test
+	public void testFindTripNoResults() throws Exception {
+		Trip tripToCracow = new Trip();
+		tripToCracow.setDescription("This is amazing trip to Cracow");
+		tripToCracow.setName("Krakow");
+		tripManager.addTrip(tripToCracow);
+		assertEquals(tripManager.findTrip("Korniszon"), null);
+		
+	}
+	
 	
 
 }

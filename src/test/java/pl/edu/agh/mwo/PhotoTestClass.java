@@ -15,6 +15,7 @@ public class PhotoTestClass {
 	}
 	
 	
+	
 	@Test
 	public void testGetComment() {
 		photo.setComment("This is a very nice shot ! ");
