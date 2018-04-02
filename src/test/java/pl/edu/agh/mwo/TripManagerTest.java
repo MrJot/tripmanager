@@ -34,7 +34,7 @@ public class TripManagerTest {
 	}
 	
 	@Test
-	public void testFindTrip() {
+	public void testFindTrip() throws Exception {
 		Trip tripToCracow = new Trip();
 		tripToCracow.setName("Cracow");
 		tripManager.addTrip(tripToCracow);
@@ -42,7 +42,7 @@ public class TripManagerTest {
 	}
 	
 	@Test
-	public void testFindTripBasedOnDescription() {
+	public void testFindTripBasedOnDescription() throws Exception {
 		Trip tripToCracow = new Trip();
 		tripToCracow.setDescription("This is amazing trip to Cracow");
 		tripToCracow.setName("Krakow");

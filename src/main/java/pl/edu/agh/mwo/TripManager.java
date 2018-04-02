@@ -21,7 +21,7 @@ public class TripManager {
 			this.trips.remove(trip);
 	}
 
-	public Trip findTrip(String keyword) {
+	public Trip findTrip(String keyword) throws Exception {
 		
 		Trip match = null;
 		
