@@ -25,9 +25,7 @@ public class Trip {
 		this.description = description;
 	}
 
-	public void setPhotos(Collection<Photo> photos) {
-		this.photos = photos;
-	}
+
 
 	private String description;
 	
