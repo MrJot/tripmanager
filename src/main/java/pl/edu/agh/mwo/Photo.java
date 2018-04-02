@@ -8,7 +8,9 @@ public class Photo {
 	public String getComment() {
 		return comment;
 	}
-
+	
+	
+//Set Comment
 	public void setComment(String comment) {
 		this.comment = comment;
 	}

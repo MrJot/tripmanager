@@ -14,12 +14,11 @@ public class PhotoTestClass {
 		photo=new Photo();
 	}
 	
-	
-	
+
 	@Test
 	public void testGetComment() {
-		photo.setComment("This is a very nice shot ! ");
-		assertEquals(photo.getComment(),"This is a very nice shot ! " );
+		photo.setComment("This is a very nice shot !");
+		assertEquals(photo.getComment(),"This is a very nice shot !" );
 	}
 	
 
