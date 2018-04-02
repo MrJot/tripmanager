@@ -21,10 +21,16 @@ public void testGetTripName() {
 }
 
 @Test
-public void testGetDescription() {
+public void testGetDescription() throws Exception {
 	testTrip.setDescription("Beautiful place to visit");
 	assertEquals(testTrip.getDescription(),"Beautiful place to visit");
 }
+
+@Test(expected=Exception.class)
+public void testEmptyDescryption() throws Exception {
+	testTrip.getDescription();
+}
+
 
 @Test
 public void testgetPhotos() {
@@ -33,6 +39,5 @@ public void testgetPhotos() {
 	assertEquals(testTrip.getPhotos().size(), 1);
 	assertEquals(testTrip.getPhotos().contains(samplePhoto), true);
 }
-	
 
 }

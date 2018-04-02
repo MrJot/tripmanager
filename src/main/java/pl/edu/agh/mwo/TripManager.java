@@ -18,15 +18,22 @@ public class TripManager {
 	}
 
 	public void removeTrip(Trip trip) {
-		if(this.trips.isEmpty()) {
-			System.out.println("Trip list is empty.");
-		}else {
-			this.trips.remove(trip);	
-		}
-		
-		
+			this.trips.remove(trip);
 	}
 
+	public Trip findTrip(String keyword) {
+		
+		Trip match = null;
+		
+		for (Trip trip:this.trips) {
+			if(trip.getName().equals(keyword)||trip.getDescription().contains(keyword)) {
+				match = trip;
+			}else {
+				match=null;
+			}
+		}
+		return match;
+	}
 	
 
 

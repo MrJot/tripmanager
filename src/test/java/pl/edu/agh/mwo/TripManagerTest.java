@@ -33,6 +33,23 @@ public class TripManagerTest {
 		
 	}
 	
+	@Test
+	public void testFindTrip() {
+		Trip tripToCracow = new Trip();
+		tripToCracow.setName("Cracow");
+		tripManager.addTrip(tripToCracow);
+		assertEquals(tripManager.findTrip("Cracow"), tripToCracow);
+	}
+	
+	@Test
+	public void testFindTripBasedOnDescription() {
+		Trip tripToCracow = new Trip();
+		tripToCracow.setDescription("This is amazing trip to Cracow");
+		tripToCracow.setName("Krakow");
+		tripManager.addTrip(tripToCracow);
+		assertEquals(tripManager.findTrip("trip"), tripToCracow);
+	}
+	
 	
 
 }
