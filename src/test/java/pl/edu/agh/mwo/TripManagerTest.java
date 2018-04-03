@@ -34,7 +34,7 @@ public class TripManagerTest {
 	}
 	
 	@Test
-	public void testFindTrip() throws Exception {
+	public void testFindTrip(){
 		Trip tripToCracow = new Trip();
 		tripToCracow.setName("Cracow");
 		tripManager.addTrip(tripToCracow);
@@ -42,7 +42,7 @@ public class TripManagerTest {
 	}
 	
 	@Test
-	public void testFindTripBasedOnDescription() throws Exception {
+	public void testFindTripBasedOnDescription(){
 		Trip tripToCracow = new Trip();
 		tripToCracow.setDescription("This is amazing trip to Cracow");
 		tripToCracow.setName("Krakow");
@@ -51,7 +51,7 @@ public class TripManagerTest {
 	}
 	
 	@Test
-	public void testFindTripNoResults() throws Exception {
+	public void testFindTripNoResults(){
 		Trip tripToCracow = new Trip();
 		tripToCracow.setDescription("This is amazing trip to Cracow");
 		tripToCracow.setName("Krakow");

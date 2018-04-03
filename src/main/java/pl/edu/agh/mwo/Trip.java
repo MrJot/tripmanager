@@ -14,10 +14,7 @@ public class Trip {
 		this.name = name;
 	}
 
-	public String getDescription() throws Exception {
-		if(this.description.isEmpty()) {
-			throw new Exception();
-		}
+	public String getDescription(){
 		return description;
 	}
 

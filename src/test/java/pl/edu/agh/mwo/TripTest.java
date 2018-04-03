@@ -22,7 +22,7 @@ public void testGetTripName() {
 
 
 @Test
-public void testGetDescription() throws Exception {
+public void testGetDescription() {
 	testTrip.setDescription("Beautiful place to visit");
 	assertEquals(testTrip.getDescription(),"Beautiful place to visit");
 }
